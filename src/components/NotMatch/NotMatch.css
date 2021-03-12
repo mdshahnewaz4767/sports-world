@@ -1,0 +1,21 @@
+.not-found{
+    background-color: rgb(241, 243, 243);
+    height: 100vh;
+}
+.logo-info img{
+    height: 50px;
+}
+.logo-info span{
+    color: rgb(77, 75, 75);
+    font-size: 22px;
+    font-weight: bold;
+}
+.pad{
+    padding: 28px 0px;
+}
+.info{
+    box-shadow: 0 0.15rem 0.5rem 0 rgb(0, 0, 0, 0.3);
+    padding: 100px 0px;
+    margin-top: 3rem;
+    text-align: center;
+}

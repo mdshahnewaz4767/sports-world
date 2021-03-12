@@ -1,0 +1,25 @@
+.league{
+    border-radius: 10px;
+    background-color: #026e96;
+}
+.details{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.leagueInfo p{
+    line-height: 16px;
+    font-weight: 500;
+}
+.leagueInfo h2{
+    line-height: 75px;
+}
+.leagueInfo img{
+    width: 20px;
+}
+.leagueInfo .leagueIcon{
+    font-size: 20px;
+}
+.leagueInfo li{
+    list-style: none;
+}

@@ -1,0 +1,40 @@
+.card{
+    background-color: #1c212d !important;
+    padding: 10px;
+    border: 1px solid #0084B4 !important;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.card:hover{
+    box-shadow: 1px 1px 10px gray;
+    transform: scaleY(1.03);
+}
+.card-body,
+.footer-card{
+    background-color: #1c212d;
+}
+.leagueImg{
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+.footer-card {
+    padding: .5rem .5rem;
+}
+.footer-card .btn-custom {
+    background-image: linear-gradient(to right, #026e96 0%, #1f3b46 51%, #1f4c5c 100%);
+    border: 2px solid #0084B4;
+    transition: all .3s ease;
+}
+.footer-card .btn-custom:hover {
+    background-image: linear-gradient(to left, #026e96 0%, #1f3b46 51%, #1f4c5c 100%);
+    border: 2px solid #0084B4;
+}
+.fw-bold{
+    font-weight: bold;
+}
