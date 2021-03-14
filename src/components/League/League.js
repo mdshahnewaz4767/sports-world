@@ -3,7 +3,10 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import LeagueList from '../LeagueList/LeagueList';
 import Loading from '../Loading';
+import SportsBanner from '../SportsBanner/SportsBanner';
 import "./League.css";
+import Header from '../Header/Header';
+
 const League = () => {
     const [leagues, setLeagues] = useState([]);
     const [visible, setVisible] = useState(15);
@@ -26,19 +29,23 @@ const League = () => {
     }, [])
 
     return (
-        <div className="text-white container mt-4 leagueCard">
-            <div className="text-center mt-4">
-                {loading && (
-                    <Loading />
-                )}
-            </div>
-            <div className="card-group row">
-                {
-                    allLeagues.map(league => <LeagueList league={league} key={league.idLeague}></LeagueList>)
-                }
-            </div>
-            <div className="card-btn ">
-                <button onClick={loadMoreLeagues} className="btn btn-custom mt-2 text-white ms-3 d-block m-auto">Load More</button>
+        <div>
+            <Header></Header>
+            <SportsBanner></SportsBanner>
+            <div className="text-white container mt-4 leagueCard">
+                <div className="text-center mt-4">
+                    {loading && (
+                        <Loading />
+                    )}
+                </div>
+                <div className="card-group row">
+                    {
+                        allLeagues.map(league =><LeagueList league={league} key={league.idLeague}></LeagueList>)
+                    }
+                </div>
+                <div className="card-btn ">
+                    <button onClick={loadMoreLeagues} className="btn btn-custom mt-2 text-white d-block m-auto">Load More</button>
+                </div>
             </div>
         </div>
     );

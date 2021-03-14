@@ -10,11 +10,13 @@ const SportsBanner = () => {
         backgroundPosition: 'center center',
         backgroundSize: 'cover',
         width: '100%',
-        height: '180px'
+        height: '180px',
+        borderBottomLeftRadius: '10px',
+        borderBottomRightRadius: '10px'
     }
     
     return (
-        <div>
+        <div className="container banner">
             <div style={bannerStyle} className="d-flex justify-content-center align-items-center">
                 <h1 className="text-white text-capitalize text-center font-weight-bold">sports world</h1>
             </div>

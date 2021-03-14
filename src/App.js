@@ -1,5 +1,4 @@
 import League from './components/League/League';
-import SportsBanner from './components/SportsBanner/SportsBanner';
 import './App.css';
 import LeagueDetails from './components/LeagueDetails/LeagueDetails';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -11,7 +10,9 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            <SportsBanner></SportsBanner>
+            <League></League>
+          </Route>
+          <Route path="/home">
             <League></League>
           </Route>
           <Route path="/league/:leagueId">

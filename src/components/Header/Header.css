@@ -1,0 +1,16 @@
+.bg-color{
+    background-color: #1c212d !important
+}
+.navbar-brand{
+    color: rgb(230, 227, 227) !important;
+}
+.navbar-brand img{
+    height: 30px;
+}
+.fw-400{
+    font-weight: 500;
+}
+.makeStyles-logoName-5:hover{
+    color: rgb(209, 206, 206) !important;
+    text-decoration: none;
+}

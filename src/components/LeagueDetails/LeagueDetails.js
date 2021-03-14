@@ -7,6 +7,7 @@ import LeagueDetailsCard from '../LeagueDetailsCard/LeagueDetailsCard';
 import LeagueDescription from '../LeagueDescription/LeagueDescription';
 import Loading from '../Loading';
 import './LeagueDetails.css';
+import Header from '../Header/Header';
 
 const LeagueDetails = () => {
     const {leagueId} = useParams();
@@ -33,6 +34,7 @@ const LeagueDetails = () => {
                     <Loading />
                 </div>
             )}
+            <Header league={league}></Header>
             <BannerLeague league={league}></BannerLeague>
             <LeagueDetailsCard league={league}></LeagueDetailsCard>
             <LeagueDescription league={league}></LeagueDescription>

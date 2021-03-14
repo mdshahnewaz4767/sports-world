@@ -10,11 +10,13 @@ const BannerLeague = (props) => {
         backgroundPosition: 'center center',
         backgroundSize: 'cover',
         width: '100%',
-        height: '250px'
+        height: '250px',
+        borderBottomLeftRadius: '10px',
+        borderBottomRightRadius: '10px'
     }
 
     return (
-        <div>
+        <div className="container banner">
             <div style={bannerStyle} className="d-flex justify-content-center align-items-center">
                 <img src={strBadge} alt="" className="leagueLogo"/>
             </div>
