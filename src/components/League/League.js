@@ -28,6 +28,7 @@ const League = () => {
         .catch(error => alert("Something went wrong!! Please try again later!"))
     }, [])
 
+
     return (
         <div>
             <Header></Header>

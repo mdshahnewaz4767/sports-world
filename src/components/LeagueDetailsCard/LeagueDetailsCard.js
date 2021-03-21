@@ -6,7 +6,7 @@ import './LeagueDetailsCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const LeagueDetailsCard = (props) => {
-    const {strLeague, intFormedYear, strCountry, strSport, strGender} = props.league;
+    const {strLeague, intFormedYear, strCountry, strSport, strGender, strPoster} = props.league;
 
     return (
         <div>
@@ -36,11 +36,12 @@ const LeagueDetailsCard = (props) => {
                     
                     <div className="col-12 col-lg-6">
                         <div className="p-4">
-                            {
+                            <img src={strPoster} className="img-fluid poster-style" alt=""/>
+                            {/* {
                                 strGender === 'Male' ? 
                                 <img src={maleLeagueImg} className="img-fluid" alt=""/> : 
                                 <img src={femaleLeagueImg} className="img-fluid" alt=""/>
-                            }
+                            } */}
                         </div>
                     </div>
                 </div>

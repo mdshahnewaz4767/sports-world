@@ -23,3 +23,8 @@
 .leagueInfo li{
     list-style: none;
 }
+.poster-style{
+    height: 227px;
+    width: 100%;
+    object-fit: contain;
+}
